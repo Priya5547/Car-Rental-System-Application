@@ -1,0 +1,21 @@
+<?php
+
+$con=mysqli_connect("localhost","id8312928_jignasha","12345678","id8312928_mydb")or die("not connect db");
+
+	$id=$_REQUEST['id'];
+	$pid=$_REQUEST['pid'];
+	$time=$_REQUEST['time'];
+	$soid=$_REQUEST['soid'];
+	$rate=$_REQUEST['rate'];
+	$uid=$_REQUEST['uid'];
+	$picupdate=$_REQUEST['picupdate'];
+	$dropdate=$_REQUEST['dropdate'];
+	$picuptime=$_REQUEST['picuptime'];
+	
+echo	$qry="insert into payment values(null,'$soid','$uid','$id','$rate','$pid','$time',0,'$picupdate','$dropdate','$picuptime')";
+	$res=mysqli_query($con,$qry)or die("not insert recored");
+	if($res)
+	{
+	    echo "your data successfully inserted";
+	}
+?>

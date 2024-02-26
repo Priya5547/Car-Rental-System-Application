@@ -1,0 +1,25 @@
+<?php
+
+$con=mysqli_connect("localhost","id8312928_jignasha","12345678","id8312928_mydb")or die("not connect db");
+
+	$name=$_GET['name'];
+	$email=$_GET['email'];
+	$password=rand(0,10000);
+	$mobileno=$_GET['mobilno'];
+	$gender=$_GET['gender'];
+	$city=$_GET['city'];
+	$typeuser=$_GET['type'];
+	
+	mail($email,"RideClub Password","Your password is ".$password);
+	
+	$qry="insert into register values(null,'$name','$email','$password','$mobileno','$gender','$city','$typeuser')";
+	$res=mysqli_query($con,$qry)or die("not insert recored");
+	if($res)
+	{
+	    echo "your data successfully inserted";
+	}
+	else
+	{
+	    echo "not inserted";
+	}
+?>

@@ -1,0 +1,46 @@
+<?php
+$con=mysqli_connect("localhost","id8312928_jignasha","12345678","id8312928_mydb")or die("not connect db");
+
+$carname=$_POST['carname'];
+
+$model=$_POST['model'];
+
+$rate=$_POST['rate'];
+
+$type=$_POST['type'];
+
+$address=$_POST['address'];
+
+$pincode=$_POST['pincode'];
+
+$city=$_POST['city'];
+
+$image=$_POST['image'];
+
+
+
+$decode = base64_decode($image);
+ 
+$imgname="IMG_".rand(0,10000).".jpg";
+ 
+
+file_put_contents('cab_image/'.$imgname,$decode);
+
+$q="insert into tbladdcar values (null,'$carname','$model','$rate','$type','$address','$pincode','$city','$imgname')";
+
+if(mysqli_query($con,$q))
+
+{
+ 
+echo "inserted";
+
+}
+
+else
+
+{
+
+echo "not inserted";
+
+}
+?>
