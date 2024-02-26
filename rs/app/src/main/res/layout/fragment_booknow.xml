@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".booknow"
+    android:gravity="center">
+
+
+    <LinearLayout
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/pickupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select PickUp Date"/>
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/pickuptext"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/dropdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Drop Date"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/droptext"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Pickup Time"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/text2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rr"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/paynow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PayNow"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

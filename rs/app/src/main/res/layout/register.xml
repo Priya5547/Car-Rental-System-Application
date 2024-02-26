@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nav"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_height="90dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:text="Registration"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="45dp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editText3"
+        android:textSize="20dp"
+        android:layout_marginTop="7dp"
+        android:textColorHint="#130b0b"
+        android:layout_width="match_parent"
+        android:drawableLeft="@drawable/name"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:hint="name" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:textColorHint="#120c0c"
+        android:drawableLeft="@drawable/email"
+        android:hint="email"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editText5"
+        android:hint="mobile no"
+        android:textColorHint="#160d0d"
+        android:textSize="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mobile"
+        android:inputType="phone" />
+    </android.support.design.widget.TextInputLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="7dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@id/text"
+            android:textColor="#100b0b"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gender"
+            android:padding="10dp"
+            />
+
+        <RadioButton
+            android:textSize="20dp"
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="#150d0d"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimary"
+            android:text="male" />
+
+        <RadioButton
+            android:textSize="20dp"
+            android:id="@+id/radioButton2"
+            android:layout_marginTop="18dp"
+            android:textColor="#0d0808"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorPrimary"
+            android:text="female" />
+    </RadioGroup>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    <Spinner
+        android:spinnerMode="dialog"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#100a0a"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+
+        android:textSize="20dp" />
+    </android.support.design.widget.TextInputLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:textSize="20dp"
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#120b0b"
+            android:checked="true"
+            android:layout_marginTop="18dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="cab owner" />
+
+        <RadioButton
+            android:textSize="20dp"
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#100a0a"
+            android:layout_marginTop="18dp"
+            android:buttonTint="@color/colorPrimary"
+            android:text="cab user" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:onClick="data_save"
+        android:textColor="#ffffff"
+        android:text="submit"
+        android:textSize="20dp" />
+</LinearLayout>

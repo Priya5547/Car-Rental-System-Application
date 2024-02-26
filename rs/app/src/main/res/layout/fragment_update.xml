@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nav"
+    android:gravity="center"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Update Profile"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="45dp"/>
+
+
+<android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:passwordToggleEnabled="true">
+
+<EditText
+        android:id="@+id/name"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#130e0e"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/name"
+        android:ems="10"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:passwordToggleEnabled="true">
+
+<EditText
+        android:id="@+id/email"
+        android:textSize="20dp"
+        android:textColorHint="#181010"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+    android:padding="10dp"
+    android:drawablePadding="10dp"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:passwordToggleEnabled="true">
+
+<EditText
+        android:id="@+id/phno"
+        android:textColorHint="#130c0c"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+    android:padding="10dp"
+    android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/mobile"
+        android:hint="phone"
+        android:textSize="20dp"
+        android:inputType="phone" />
+</android.support.design.widget.TextInputLayout>
+
+<Button
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:id="@+id/btnupdate"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="Update"/>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/edit"
+
+        android:title="EDIT PROFILE" />
+
+    <item
+        android:id="@+id/chng"
+
+        android:title="CHANGE PASSWORD" />
+    <item
+        android:id="@+id/trckorder"
+
+        android:title="TRACK ORDER" />
+    <item
+        android:id="@+id/urorder"
+
+        android:title="YOUR ORDER" />
+    <item
+        android:id="@+id/add"
+
+        android:title="ADD CAR" />
+    <item
+        android:id="@+id/mycar"
+
+        android:title="MY CAR" />
+    <item
+        android:id="@+id/viewcar"
+
+        android:title="VIEW CAR" />
+    <item
+        android:id="@+id/cntus"
+
+        android:title="CONTACT US" />
+    <item
+        android:id="@+id/logout"
+
+        android:title="LOGOUT" />
+</menu>

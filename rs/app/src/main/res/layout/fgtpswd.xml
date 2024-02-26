@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Forget password"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#0d0c0c"
+        android:textColorHint="#121111"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp" />
+    </android.support.design.widget.TextInputLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/cabowner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:padding="10dp"
+            android:textColor="#151414"
+            android:buttonTint="@color/colorPrimary"
+            android:text="cab owner"
+            android:textSize="20dp" />
+        <RadioButton
+            android:id="@+id/cabuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textColor="#151414"
+            android:buttonTint="@color/colorPrimary"
+            android:text="cab user"
+            android:textSize="20dp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/button3"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="Forgot Password"/>
+</LinearLayout>
