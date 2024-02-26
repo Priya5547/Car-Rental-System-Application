@@ -1,0 +1,20 @@
+<?php
+
+$con=mysqli_connect("localhost","id8312928_jignasha","12345678","id8312928_mydb")or die("not connect db");
+
+    $name=$_GET['name'];
+	$email=$_GET['email'];
+	$contact=$_GET['contact'];
+	$message=$_GET['message'];
+
+	$qry="insert into tblcontact_us values(null,'$name','$email','$contact','$message')";
+	if(mysqli_query($con,$qry))
+	{
+	    echo "your data successfully inserted";
+	}
+	else
+	{
+	    echo "not inserted";
+	}
+
+?>
